@@ -107,6 +107,43 @@ $ git push -u origin {SAME BRANCH NAME AS ABOVE}
 
 
 
+## Git Branches
+By default, every commit that's made is made on the `main` branch. Sure, working on just one branch is very much possible; however, when working on a project as a team or even when submitting **Pull-Requests** creating branches actually makes the process a lot easier and more convenient.<br>
+
+### Create and move to a new branch:
+```sh
+git checkout -b {branch name}
+```
+With this, all future changes would be made within the new branch and wouldn't affect main branch. <br>
+\* to just move between branches that already exist, ignore `-b` argument.
+
+### Push new branch
+```sh
+git push -u origin {branch name}
+```
+push changes within this branch (and the branch itself) to the remote (eg: github/gitlab)
+
+### List all branches
+```sh
+git branch -a
+```
+
+### Pulling changes
+```sh
+git pull origin {branch name}
+```
+
+### Deleting branch
+Delete locally:
+```sh
+git branch -D {branch name}
+```
+Delete on remote server:
+```sh
+git push {remote name} -d {branch name}
+```
+
+
 ## Git Restore
 Restore specified paths in the working tree with some contents from a restore source. If a path is tracked but does not exist in the restore source, it will be removed to match the source.<br>
 The command can also be used to restore the content in the index with `--staged`, or restore both the working tree and the index with `--staged --worktree`.<br>
