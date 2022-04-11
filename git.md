@@ -162,7 +162,11 @@ located.
 
 
 ## `git diff`
-
+This command allows the developer to view all changes made in a project (within all files). Optionally, file name can be entered to only get changes in that file.
+```sh
+git diff {filename}
+```
+\*`git diff` only works for tracked files.
 
 
 ## `git log`
