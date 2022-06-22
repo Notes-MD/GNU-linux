@@ -77,3 +77,9 @@
 * `grep -i `: to ignore case sensitiveness
 * `grep -v `: selects non-matching lines
 * `grep -c `: prints a count of matching lines
+
+## User/System info
+* `who` : lists all logged in users
+* `whoami` : displays your username
+* `id` : displays the numbers associated with your user account name- User IDs (UIDs), and group names- Group IDs (GIDs).
+* `uname`: display system information
